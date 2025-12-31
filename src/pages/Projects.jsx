@@ -8,8 +8,8 @@ export default function Projects() {
       title: "Portfolio Website",
       desc: "A beautiful and responsive portfolio website built with React and Tailwind CSS",
       tags: ["React", "Tailwind", "Framer Motion"],
-      github: "https://github.com/rajvimistry22/portfolio-website",
-      live: "/"
+      github: "https://github.com/rajvimistry22/portfolio",
+      live: "https://portfolio-l10b.onrender.com"
     },
     {
       title: "CodeVizAI",

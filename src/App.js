@@ -1,5 +1,4 @@
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
-import { useState } from "react";
 import "./App.css";
 import About from "./pages/About";
 import Education from "./pages/Education";
@@ -28,7 +27,7 @@ export default function App() {
             <span className="dot yellow" />
             <span className="dot green" />
           </div>
-          <div className="address">www.your-portfolio.dev</div>
+          <div className="address">https://portfolio-l10b.onrender.com</div>
         </div>
 
         <div className="inner">
@@ -55,9 +54,7 @@ export default function App() {
                 <div className="notice-icon">⚠️</div>
                 <div className="notice-content">
                   <h4>Portfolio Notice 💖</h4>
-                  <p>
-                    Click on any folder above to explore different sections.✨
-                  </p>
+                  <p>Click on any folder above to explore different sections ✨</p>
                 </div>
               </div>
             </>
@@ -70,8 +67,6 @@ export default function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-
-
         </div>
       </div>
     </div>

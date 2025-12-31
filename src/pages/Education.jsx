@@ -7,9 +7,9 @@ export default function Education() {
     <>
       <style>{`
         .page-content {
-          height: 70vh;              
+          height: 70vh;
           padding: 30px;
-          overflow-y: auto;          
+          overflow-y: auto;
           animation: fadeIn 0.5s ease;
         }
 
@@ -41,7 +41,7 @@ export default function Education() {
 
         .edu-header {
           text-align: center;
-          margin-bottom: 50px;
+          margin-bottom: 40px;
         }
 
         .edu-icon {
@@ -59,7 +59,9 @@ export default function Education() {
 
         .edu-header h1 {
           color: #ff2f7d;
+          margin: 0;
         }
+
 
         .timeline {
           position: relative;
@@ -94,7 +96,7 @@ export default function Education() {
         .timeline-item::before {
           content: "";
           position: absolute;
-          top: 30px;
+          top: 32px;
           width: 14px;
           height: 14px;
           background: #ff5fa2;
@@ -113,12 +115,13 @@ export default function Education() {
         .card {
           background: white;
           border-radius: 16px;
-          padding: 30px;
+          padding: 28px;
           box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
         }
 
         .card h3 {
           color: #ff2f7d;
+          margin-top: 0;
         }
 
         .company {
@@ -146,6 +149,51 @@ export default function Education() {
           font-size: 14px;
           color: #a82c5a;
           line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+          .timeline {
+            padding-left: 40px;
+          }
+
+          .timeline::before {
+            left: 40px;
+          }
+
+          .timeline-item {
+            width: 100%;
+            left: 0 !important;
+            padding-left: 40px;
+          }
+
+          .timeline-item::before {
+            left:-5px;
+          }
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 600px) {
+          .page-content {
+            padding: 20px;
+            height: auto;
+          }
+
+          .edu-header h1 {
+            font-size: 22px;
+          }
+
+          .card {
+            padding: 20px;
+          }
+
+          .card h3 {
+            font-size: 16px;
+          }
+
+          .card p,
+          .card li {
+            font-size: 13px;
+          }
         }
 
         @keyframes fadeIn {
@@ -181,9 +229,8 @@ export default function Education() {
               </span>
               <span className="date">📅 2022 – 2026</span>
               <p>
-                Completed a Computer Science and Engineering degree with a strong
-                foundation in frontend development, modern web technologies,
-                problem-solving, and software engineering principles.
+                Strong foundation in frontend development, modern web
+                technologies, problem-solving, and software engineering.
               </p>
               <p><strong>🎯 Percentage:</strong> 79.03%</p>
             </div>
@@ -197,7 +244,7 @@ export default function Education() {
               <ul>
                 <li>📘 Science Stream</li>
                 <li>📊 Percentage: 80%</li>
-                <li>💡 Strong foundation in Mathematics & Physics</li>
+                <li>💡 Mathematics & Physics</li>
               </ul>
             </div>
           </div>
@@ -208,7 +255,6 @@ export default function Education() {
               <span className="company coral">Lilaba Kanya Vidhyalay</span>
               <span className="date">📅 2019 – 2020</span>
               <ul>
-                <li>🎓 Completed SSC</li>
                 <li>📊 Percentage: 85.33%</li>
                 <li>📚 Strong academic basics</li>
               </ul>
